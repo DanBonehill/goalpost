@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		31D8C65F20641402003F94D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C65E20641402003F94D1 /* AppDelegate.swift */; };
-		31D8C66120641402003F94D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C66020641402003F94D1 /* ViewController.swift */; };
 		31D8C66420641402003F94D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D8C66220641402003F94D1 /* Main.storyboard */; };
 		31D8C66720641402003F94D1 /* goalpost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C66520641402003F94D1 /* goalpost.xcdatamodeld */; };
 		31D8C66920641402003F94D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D8C66820641402003F94D1 /* Assets.xcassets */; };
 		31D8C66C20641402003F94D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D8C66A20641402003F94D1 /* LaunchScreen.storyboard */; };
+		31D8C6782064159F003F94D1 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C6772064159F003F94D1 /* GoalsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		31D8C65B20641402003F94D1 /* goalpost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goalpost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D8C65E20641402003F94D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31D8C66020641402003F94D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31D8C66320641402003F94D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31D8C66620641402003F94D1 /* goalpost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = goalpost.xcdatamodel; sourceTree = "<group>"; };
 		31D8C66820641402003F94D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D8C66B20641402003F94D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31D8C66D20641402003F94D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31D8C6772064159F003F94D1 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,11 @@
 		31D8C65D20641402003F94D1 /* goalpost */ = {
 			isa = PBXGroup;
 			children = (
+				31D8C6762064144D003F94D1 /* Extensions */,
+				31D8C67520641446003F94D1 /* Enums */,
+				31D8C6742064142D003F94D1 /* View */,
+				31D8C6732064141F003F94D1 /* Controller */,
 				31D8C65E20641402003F94D1 /* AppDelegate.swift */,
-				31D8C66020641402003F94D1 /* ViewController.swift */,
 				31D8C66220641402003F94D1 /* Main.storyboard */,
 				31D8C66820641402003F94D1 /* Assets.xcassets */,
 				31D8C66A20641402003F94D1 /* LaunchScreen.storyboard */,
@@ -65,6 +68,35 @@
 				31D8C66520641402003F94D1 /* goalpost.xcdatamodeld */,
 			);
 			path = goalpost;
+			sourceTree = "<group>";
+		};
+		31D8C6732064141F003F94D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31D8C6772064159F003F94D1 /* GoalsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		31D8C6742064142D003F94D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		31D8C67520641446003F94D1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		31D8C6762064144D003F94D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D8C6782064159F003F94D1 /* GoalsVC.swift in Sources */,
 				31D8C66720641402003F94D1 /* goalpost.xcdatamodeld in Sources */,
-				31D8C66120641402003F94D1 /* ViewController.swift in Sources */,
 				31D8C65F20641402003F94D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
